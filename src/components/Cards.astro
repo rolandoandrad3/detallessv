@@ -1,0 +1,28 @@
+---
+const { title, description, buttonText } = Astro.props
+---
+
+<div class="w-60 bg-white rounded-xl shadow-lg p-2">
+  <img
+    class="h-40 w-full object-cover rounded-xl"
+    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=750&q=80"
+    alt={title}
+  />
+
+  <div class="p-2">
+    <h2 class="font-bold text-lg mb-2">{title}</h2>
+
+    <p class="text-sm text-gray-600">
+      {description}
+    </p>
+  </div>
+
+  <div class="m-2">
+    <a
+      href="#"
+      class="inline-block text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+    >
+      {buttonText}
+    </a>
+  </div>
+</div>
