@@ -1,46 +1,60 @@
-# Astro Starter Kit: Basics
+**DETALLES SV**
 
-```sh
-npm create astro@latest -- --template basics
-```
+Sitio web moderno, rápido y optimizado para SEO desarrollado con Astro y Tailwind CSS para DETALLES SV, empresa especializada en alquiler de mobiliario, mantelería, decoración y planeación de eventos.
 
-<!-- ASTRO:REMOVE:START -->
+Este proyecto está enfocado en:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Diseño limpio y elegante
 
-<!-- ASTRO:REMOVE:END -->
+Alto rendimiento (optimizado para PageSpeed)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Escalabilidad y fácil mantenimiento
 
-<!-- ASTRO:REMOVE:START -->
+Buenas prácticas modernas de frontend
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+✨ Tecnologías Utilizadas
 
-<!-- ASTRO:REMOVE:END -->
+Astro – Generador de sitios estáticos
 
-## 🚀 Project Structure
+Tailwind CSS – Estilos utility-first
 
-Inside of your Astro project, you'll see the following folders and files:
+CSS (global y por componente)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Node.js / npm
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+🎨 Guía de Estilos
+
+Tailwind CSS es el sistema principal de estilos
+
+Los estilos globales se encuentran en src/styles/global.css
+
+Los estilos específicos pueden definirse dentro de cada componente .astro
+
+Evitar modificar la configuración base de Astro sin necesidad
+
+📐 Principios de Diseño
+
+Diseño limpio y minimalista
+
+Tipografía clara y buena jerarquía visual
+
+Enfoque mobile-first
+
+Estética elegante alineada con eventos y decoración
+
+🔍 SEO y Rendimiento
+
+El proyecto está preparado para:
+
+Cargas rápidas
+
+HTML semántico
+
+Optimización SEO futura
+
+Buenas puntuaciones en Google PageSpeed
+
+Las optimizaciones SEO avanzadas se aplicarán después de cerrar el diseño final.
 
 ## 🧞 Commands
 
@@ -54,7 +68,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

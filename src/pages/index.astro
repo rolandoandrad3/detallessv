@@ -12,9 +12,9 @@ import Cards from '../components/Cards.astro'
 
   <!-- SECCIÓN DE CARDS -->
   <section class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-6 place-items-center ">
       <Cards
-        title="Alquiler Mobiliario"
+        title="Alquiler de Mobiliario"
         description="Información sobre nuestros servicios de alquiler de mobiliario."
         buttonText="Ver servicio"
       />
@@ -38,11 +38,29 @@ import Cards from '../components/Cards.astro'
       />
     </div>
   </section>
-  <section class="mx-8 my-8 leading-relaxed max-w-5xl mx-auto">
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+  <section class="bg-gray-50 py-20">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+      Cada detalle importa en tu evento
+    </h2>
+
+    <p class="text-gray-600 mb-8">
+      En DETALLESSV te ayudamos a crear eventos únicos con mobiliario,
+      mantelería y decoración pensados para cada ocasión.
     </p>
-  </section>
+
+    <a
+      href="/contacto"
+      class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg
+             hover:bg-purple-700 transition"
+    >
+      Solicitar cotización
+    </a>
+
+  </div>
+</section>
+
 
   <Footer />
 </Layout>
