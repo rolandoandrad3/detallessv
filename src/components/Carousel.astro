@@ -1,0 +1,182 @@
+---
+// Componente: Hero Carousel
+---
+
+<section class="relative overflow-hidden bg-gradient-to-br from-detalles-pink via-white to-detalles-pink/30">
+  <div class="carousel-container relative mx-auto max-w-7xl px-4 py-6 sm:py-12 lg:py-16 sm:px-6 lg:px-8">
+    <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
+      <!-- Carousel Track -->
+      <div class="carousel-track flex transition-transform duration-700 ease-in-out h-full w-full">
+        <!-- Slide 1 -->
+        <div class="carousel-slide min-w-full h-full relative flex-shrink-0">
+          <img 
+            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1400&h=800&fit=crop&q=80" 
+            alt="Eventos elegantes" 
+            class="w-full h-full object-cover object-center"
+            loading="eager"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/80 via-black/50 sm:via-black/40 to-transparent flex items-end sm:items-center p-6 sm:p-12 lg:p-16">
+            <div class="text-white max-w-2xl w-full">
+              <h2 class="text-3xl sm:text-4xl lg:text-6xl font-display font-bold mb-2 sm:mb-4 leading-tight">Eventos Inolvidables</h2>
+              <p class="text-base sm:text-lg lg:text-2xl opacity-95 font-light">Transformamos tus celebraciones en momentos mágicos</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="carousel-slide min-w-full h-full relative flex-shrink-0">
+          <img 
+            src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1400&h=800&fit=crop&q=80" 
+            alt="Mobiliario elegante" 
+            class="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/80 via-black/50 sm:via-black/40 to-transparent flex items-end sm:items-center p-6 sm:p-12 lg:p-16">
+            <div class="text-white max-w-2xl w-full">
+              <h2 class="text-3xl sm:text-4xl lg:text-6xl font-display font-bold mb-2 sm:mb-4 leading-tight">Mobiliario de Calidad</h2>
+              <p class="text-base sm:text-lg lg:text-2xl opacity-95 font-light">Sillas y mesas para cada ocasión especial</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="carousel-slide min-w-full h-full relative flex-shrink-0">
+          <img 
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1400&h=800&fit=crop&q=80" 
+            alt="Decoración perfecta" 
+            class="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/80 via-black/50 sm:via-black/40 to-transparent flex items-end sm:items-center p-6 sm:p-12 lg:p-16">
+            <div class="text-white max-w-2xl w-full">
+              <h2 class="text-3xl sm:text-4xl lg:text-6xl font-display font-bold mb-2 sm:mb-4 leading-tight">Decoración Perfecta</h2>
+              <p class="text-base sm:text-lg lg:text-2xl opacity-95 font-light">Cada detalle cuenta en tu evento especial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button 
+        class="carousel-prev absolute left-2 sm:left-4 lg:left-6 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-800 rounded-full p-2 sm:p-3 shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-detalles-teal focus:ring-offset-2 z-10"
+        aria-label="Imagen anterior"
+      >
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <button 
+        class="carousel-next absolute right-2 sm:right-4 lg:right-6 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-800 rounded-full p-2 sm:p-3 shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-detalles-teal focus:ring-offset-2 z-10"
+        aria-label="Imagen siguiente"
+      >
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+      <!-- Dots Indicator -->
+      <div class="absolute bottom-3 sm:bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        <button class="carousel-dot w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full bg-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" data-slide="0" aria-label="Ir a imagen 1"></button>
+        <button class="carousel-dot w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full bg-white/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" data-slide="1" aria-label="Ir a imagen 2"></button>
+        <button class="carousel-dot w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full bg-white/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" data-slide="2" aria-label="Ir a imagen 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Carousel functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track') as HTMLElement;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-prev') as HTMLElement;
+    const nextBtn = document.querySelector('.carousel-next') as HTMLElement;
+    const dots = document.querySelectorAll('.carousel-dot');
+    
+    if (!track || !prevBtn || !nextBtn || dots.length === 0) return;
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    let autoAdvanceInterval: number | null = null;
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      // Update dots
+      dots.forEach((dot, index) => {
+        if (index === currentSlide) {
+          dot.classList.remove('bg-white/50');
+          dot.classList.add('bg-white', 'scale-125');
+        } else {
+          dot.classList.remove('bg-white', 'scale-125');
+          dot.classList.add('bg-white/50');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    function startAutoAdvance() {
+      if (autoAdvanceInterval !== null) {
+        clearInterval(autoAdvanceInterval);
+      }
+      autoAdvanceInterval = setInterval(nextSlide, 7000) as unknown as number;
+    }
+
+    function stopAutoAdvance() {
+      if (autoAdvanceInterval !== null) {
+        clearInterval(autoAdvanceInterval);
+        autoAdvanceInterval = null;
+      }
+    }
+
+    // Event listeners
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      stopAutoAdvance();
+      startAutoAdvance();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      stopAutoAdvance();
+      startAutoAdvance();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        updateCarousel();
+        stopAutoAdvance();
+        startAutoAdvance();
+      });
+    });
+
+    track.addEventListener('mouseenter', stopAutoAdvance);
+    track.addEventListener('mouseleave', startAutoAdvance);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+        stopAutoAdvance();
+        startAutoAdvance();
+      }
+      if (e.key === 'ArrowRight') {
+        nextSlide();
+        stopAutoAdvance();
+        startAutoAdvance();
+      }
+    });
+
+    updateCarousel();
+    startAutoAdvance();
+  });
+</script>

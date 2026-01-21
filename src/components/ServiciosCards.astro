@@ -1,0 +1,43 @@
+---
+// Componente: Servicios (Cards)
+import Cards from './Cards.astro';
+---
+
+<section class="bg-gray-100 py-16">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16 px-4">
+      <span class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-detalles-teal">Nuestros Servicios</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mt-4">
+        Todo lo que Necesitas para tu Evento
+      </h2>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+      <Cards
+        title="Alquiler Mobiliario"
+        description="Información sobre nuestros servicios de alquiler de mobiliario."
+        buttonText="Ver servicio"
+      />
+
+      <Cards
+        title="Alquiler de Manteleria"
+        description="Información sobre nuestros servicios de alquiler de mantelería."
+        buttonText="Ver Servicio"
+      />
+
+      <Cards
+        title="Servicio de Decoracion"
+        description="Informacion nuestros servicios de decoración para eventos."
+        buttonText="Ver Servicio"
+      />
+
+      <Cards
+        title="Planeacion de Eventos"
+        description="Información sobre nuestros servicios de planeación de eventos."
+        buttonText="Ver Servicio"
+      />
+    </div>
+  </div>
+</section>

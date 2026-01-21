@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Welcome from '../components/Welcome.astro'
+import Carousel from '../components/Carousel.astro'
+import QuienesSomos from '../components/QuienesSomos.astro'
+import ComoFunciona from '../components/ComoFunciona.astro'
+import RequisitosYPoliticas from '../components/RequisitosYPoliticas.astro'
 import Footer from '../components/Footer.astro'
 import Cards from '../components/Cards.astro'
 ---
@@ -10,39 +14,53 @@ import Cards from '../components/Cards.astro'
     <Welcome />
   </section>
 
+  <Carousel />
+
+  <QuienesSomos />
+
   <!-- SECCIÓN DE CARDS -->
   <section class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
-      <Cards
-        title="Alquiler Mobiliario"
-        description="Información sobre nuestros servicios de alquiler de mobiliario."
-        buttonText="Ver servicio"
-      />
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-12 sm:mb-16 px-4">
+        <span class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-detalles-teal">Nuestros Servicios</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mt-4">
+          Todo lo que Necesitas para tu Evento
+        </h2>
+      </div>
 
-      <Cards
-        title="Alquiler de Manteleria"
-        description="Información sobre nuestros servicios de alquiler de mantelería."
-        buttonText="Ver Servicio"
-      />
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+        <Cards
+          title="Alquiler Mobiliario"
+          description="Información sobre nuestros servicios de alquiler de mobiliario."
+          buttonText="Ver servicio"
+        />
 
-      <Cards
-        title="Servicio de Decoracion"
-        description="Informacion nuestros servicios de decoración para eventos."
-        buttonText="Ver Servicio"
-      />
+        <Cards
+          title="Alquiler de Manteleria"
+          description="Información sobre nuestros servicios de alquiler de mantelería."
+          buttonText="Ver Servicio"
+        />
 
-      <Cards
-        title="Planeacion de Eventos"
-        description="Información sobre nuestros servicios de planeación de eventos."
-        buttonText="Ver Servicio"
-      />
+        <Cards
+          title="Servicio de Decoracion"
+          description="Informacion nuestros servicios de decoración para eventos."
+          buttonText="Ver Servicio"
+        />
+
+        <Cards
+          title="Planeacion de Eventos"
+          description="Información sobre nuestros servicios de planeación de eventos."
+          buttonText="Ver Servicio"
+        />
+      </div>
     </div>
   </section>
-  <section class="mx-8 my-8 leading-relaxed max-w-5xl mx-auto">
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry...
-    </p>
-  </section>
+
+  <ComoFunciona />
+
+  <RequisitosYPoliticas />
 
   <Footer />
 </Layout>
