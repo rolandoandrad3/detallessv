@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Welcome from '../components/Welcome.astro';
+import Section from '../components/Section.astro';
+import CardProduct from '../components/CardProduct.astro';
+import Table from '../components/Table.astro';
+import FeaturedGrid from '../components/FeatureGrid.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+
+  <section class="section-wrapper">
+    <Welcome />
+  </section>
+<div class="h-24"></div>
+
+  <section class="section-wrapper">
+    <Section />
+  </section>
+<div class="h-24"></div>
+
+  <!--SECCIÓN DE CARDS -->
+  <section class="section-wrapper">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <CardProduct
+          title="Alquiler de mesas"
+          description="Ofrecen mesas para eventos en diferentes formatos, incluyendo mesas rectangulares y redondas pensadas para acomodar distintos números de invitados y tipos de celebración"
+        />
+
+        <CardProduct
+          title="Alquiler de sillas"
+          description="Proporcionan sillas para uso en eventos, adecuadas tanto para reuniones familiares como eventos sociales más formales. El mobiliario se entrega limpio y en buenas"
+        />
+
+        <CardProduct
+          title="Sillas y mesas infantiles"
+          description="Servicio de sillas y mesas diseñadas para eventos infantiles, adaptadas a la altura y comodidad de los niños"
+        />
+
+        <CardProduct
+          title="Alquiler de manteles, lazos y forros para sillas"
+          description="Servicio de mantelería en diferentes colores, así como lazos y forros para sillas que permiten personalizar la decoración del evento."
+        />
+
+        <CardProduct
+          title="Otros artículos para eventos"
+          description="Alquiler de artículos complementarios para eventos, según disponibilidad, que ayudan a completar la organización y presentación del evento."
+        />
+
+         <CardProduct
+          title="Entrega a domicilio"
+          description="El servicio incluye entrega del mobiliario en el lugar del evento, facilitando la logística para el cliente por un costo extra."
+        />
+
+
+      </div>
+    </div>
+  </section>
+
+<div class="h-24"></div>
+
+   <!--TABLA -->
+  <section class="section-wrapper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Table />
+    </div>
+  </section>
+
+<div class="h-24"></div>
+
+    <!--FEATURED -->
+    <section class="section-wrapper">
+    <div class="max-w-6xl mx-auto px-6">
+        <FeaturedGrid />
+    </div>
+    </section>
+
+<div class="h-24"></div>
+
+  <section class="section-wrapper">
+    <Footer />
+  </section>
+
+</Layout>
