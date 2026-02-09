@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}'],
+  content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        'detalles': {
+        brand: {
+          gold: '#C9A24D',
+          dark: '#1C1C1C',
+          muted: '#F5F5F5',
+        },
+        detalles: {
           teal: '#90EEE4',
           'teal-dark': '#5FD4C8',
           pink: '#FDF3F8',
@@ -12,8 +17,8 @@ export default {
         },
       },
       fontFamily: {
-        'display': ['Playfair Display', 'Georgia', 'serif'],
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',
