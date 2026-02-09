@@ -1,11 +1,18 @@
 ---
-const { title, description, buttonText } = Astro.props
+interface Props {
+  title: string;
+  description: string;
+  buttonText: string;
+  image: string;
+}
+
+const { title, description, buttonText, image } = Astro.props
 ---
 
-<div class="w-60 bg-white rounded-xl shadow-lg p-2">
+<div class="w-60 bg-white rounded-xl shadow-lg p-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
   <img
     class="h-40 w-full object-cover rounded-xl"
-    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=750&q=80"
+    src={image}
     alt={title}
   />
 
@@ -18,11 +25,11 @@ const { title, description, buttonText } = Astro.props
   </div>
 
   <div class="m-2">
-    <a
-      href="#"
-      class="inline-block text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+    
+    <a  href="#"
+      class="inline-block text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700 transition-colors duration-300"
     >
       {buttonText}
-    </a>
+    </>
   </div>
 </div>

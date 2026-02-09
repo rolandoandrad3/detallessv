@@ -1,5 +1,5 @@
 ---
-// Componente: Hero Carousel
+// Componente: Hero Carousel (3 slides - Cloudinary)
 ---
 
 <section class="relative overflow-hidden bg-gradient-to-br from-detalles-pink via-white to-detalles-pink/30">
@@ -7,11 +7,12 @@
     <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
       <!-- Carousel Track -->
       <div class="carousel-track flex transition-transform duration-700 ease-in-out h-full w-full">
+        
         <!-- Slide 1 -->
         <div class="carousel-slide min-w-full h-full relative flex-shrink-0">
           <img 
-            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1400&h=800&fit=crop&q=80" 
-            alt="Eventos elegantes" 
+            src="https://res.cloudinary.com/dtvin1hes/image/upload/w_1400,h_800,c_fill,g_auto,f_auto,q_auto/v1770517365/photo_4965234828903559504_y_pyrgbn.jpg"
+            alt="Mesa redonda elegante" 
             class="w-full h-full object-cover object-center"
             loading="eager"
           />
@@ -23,11 +24,11 @@
           </div>
         </div>
         
-        <!-- Slide 2 -->
+        <!-- Slide 2 - NUEVA IMAGEN -->
         <div class="carousel-slide min-w-full h-full relative flex-shrink-0">
           <img 
-            src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1400&h=800&fit=crop&q=80" 
-            alt="Mobiliario elegante" 
+            src="https://res.cloudinary.com/dtvin1hes/image/upload/w_1400,h_800,c_fill,g_auto,f_auto,q_auto/v1770524504/photo_4965234828903559502_y_oxxcie.jpg"
+            alt="Mesa con decoración floral" 
             class="w-full h-full object-cover object-center"
             loading="lazy"
           />
@@ -42,8 +43,8 @@
         <!-- Slide 3 -->
         <div class="carousel-slide min-w-full h-full relative flex-shrink-0">
           <img 
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1400&h=800&fit=crop&q=80" 
-            alt="Decoración perfecta" 
+            src="https://res.cloudinary.com/dtvin1hes/image/upload/w_1400,h_800,c_fill,g_auto,f_auto,q_auto/v1770517364/photo_4965234828903559495_y_jjaj8n.jpg" 
+            alt="Detalles de decoración" 
             class="w-full h-full object-cover object-center"
             loading="lazy"
           />
@@ -74,7 +75,7 @@
         </svg>
       </button>
 
-      <!-- Dots Indicator -->
+      <!-- Dots Indicator (3 dots) -->
       <div class="absolute bottom-3 sm:bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         <button class="carousel-dot w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full bg-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" data-slide="0" aria-label="Ir a imagen 1"></button>
         <button class="carousel-dot w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full bg-white/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" data-slide="1" aria-label="Ir a imagen 2"></button>
